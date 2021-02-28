@@ -3,6 +3,10 @@
 
 #loading the data
 library("xlsx")
+
+
+
+# fasdfafasdasd
 exrate.df <- read.xlsx("exrate.xlsx",1)
 var <- read.xlsx("var.xlsx",1)
 #modifying the data 
@@ -63,7 +67,7 @@ kpss.test(exrate.ex,null = c("Trend"), lshort = TRUE) #Null hypothesis is that x
 ##this is done with kpss.test (Kwiatkowski-Phillips-Schmidt-Shin). The result shows that our data
 ##exhibits trend non-stationarity.
 
-#yritän huvikseen muokata datan stationääriksi
+#yritï¿½n huvikseen muokata datan stationï¿½ï¿½riksi
 
 exrate.exln <- 100*(diff(log(exrate.df$ex)))
 library(forecast)
